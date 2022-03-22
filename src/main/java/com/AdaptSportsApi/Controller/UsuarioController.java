@@ -1,27 +1,21 @@
 package com.AdaptSportsApi.Controller;
 
-import java.util.List;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.AdaptSportsApi.DTO.UsuarioDTO;
-import com.AdaptSportsApi.Models.Locais;
 import com.AdaptSportsApi.Models.Usuario;
-import com.AdaptSportsApi.Repository.UsuarioRepository;
-import com.AdaptSportsApi.Service.LocaisService;
 import com.AdaptSportsApi.Service.UsuarioService;
 import com.AdaptSportsApi.Service.Exception.NoAuthException;
 
 @RestController
 @RequestMapping(value = "/login")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://adaptsports.netlify.app")
 public class UsuarioController {
 
 	private UsuarioService service;

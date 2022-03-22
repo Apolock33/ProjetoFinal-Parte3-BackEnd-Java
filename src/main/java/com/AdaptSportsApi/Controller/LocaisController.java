@@ -22,7 +22,7 @@ import com.AdaptSportsApi.Service.Exception.ValidateException;
 
 @RestController
 @RequestMapping(value = "/locais")
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://adaptsports.netlify.app")
 public class LocaisController {
 
 	private LocaisService service;
