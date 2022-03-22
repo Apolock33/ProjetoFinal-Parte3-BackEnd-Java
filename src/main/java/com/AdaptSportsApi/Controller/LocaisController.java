@@ -77,7 +77,7 @@ public class LocaisController {
 			} catch (Exception err) {
 				return ResponseEntity.badRequest().body(null);
 			}
-		}).orElseGet(() -> new ResponseEntity("Tradutor não encontrado", HttpStatus.BAD_REQUEST));
+		}).orElseGet(() -> new ResponseEntity("Local não encontrado", HttpStatus.BAD_REQUEST));
 
 	}
 
